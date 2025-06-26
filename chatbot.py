@@ -9,8 +9,7 @@ import json
 import numpy as np
 import os
 
-
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 with open("faq.json", "r", encoding="utf-8") as f:
     faqs = json.load(f)
